@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XfThemeDarkApp.ViewModels;
 
 namespace XfThemeDarkApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class DashboardView : ContentPage
     {
-        public LoginPage()
+        public DashboardView()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
         }
     }
 }

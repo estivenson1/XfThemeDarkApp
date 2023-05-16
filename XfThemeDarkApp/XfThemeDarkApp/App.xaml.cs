@@ -1,20 +1,18 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XfThemeDarkApp.Services;
 using XfThemeDarkApp.Views;
 
 namespace XfThemeDarkApp
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new MasterDetailView();
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()
